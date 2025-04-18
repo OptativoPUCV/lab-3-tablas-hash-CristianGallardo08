@@ -9,3 +9,9 @@ hashmap.c:50:9: error: unused variable 'ogPos' [-Werror=unused-variable]
          ^~~~~
 cc1.exe: all warnings being treated as errors
 eeef3b7
+vi., 18 de abr. de 2025 15:07:25: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|5
+total_score: 20/70
+aa32002
