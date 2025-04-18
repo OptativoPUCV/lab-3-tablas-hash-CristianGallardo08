@@ -1,0 +1,11 @@
+vi., 18 de abr. de 2025 15:06:55: 
+ hashmap.c | 61 +++++++++++++++++++++++++++++++++++++++----------------------
+ 1 file changed, 39 insertions(+), 22 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:50:9: error: unused variable 'ogPos' [-Werror=unused-variable]
+     int ogPos = pos;
+         ^~~~~
+cc1.exe: all warnings being treated as errors
+eeef3b7
