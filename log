@@ -106,3 +106,9 @@ vi., 18 de abr. de 2025 15:40:03:
  tests:  13|2
 total_score: 50/70
 6de2caf
+vi., 18 de abr. de 2025 19:56:04: 
+ hashmap.c | 17 +++++++----------
+ 1 file changed, 7 insertions(+), 10 deletions(-)
+ tests:  13|2
+total_score: 50/70
+72317c8

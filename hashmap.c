@@ -82,30 +82,27 @@ void eraseMap(HashMap *map, char *key)
 
 Pair *searchMap(HashMap *map, char *key)
 {
-    int pos = hash(key, map->capacity); // Calcula la posición inicial
-    int ogPos = pos;                    // Guarda la posición original para verificar que no se haga un ciclo infinito
+    int pos = hash(key, map->capacity);
+    int ogPos = pos;
 
-    // Recorremos el mapa hasta encontrar el par o llegar al punto de inicio
     while (map->buckets[pos] != NULL)
-    { // Solo seguimos si la casilla no está vacía
-        // Si encontramos un par y las claves coinciden
+    {
+
         if (map->buckets[pos]->key != NULL && is_equal(map->buckets[pos]->key, key))
         {
-            map->current = pos;       // Actualiza el índice actual
-            return map->buckets[pos]; // Retorna el par encontrado
+            map->current = pos;
+            return map->buckets[pos];
         }
 
-        // Avanzamos al siguiente índice (circular)
         pos = (pos + 1) % map->capacity;
 
-        // Si hemos dado una vuelta completa, no seguimos buscando
         if (pos == ogPos)
         {
             break;
         }
     }
 
-    return NULL; // Si no encontramos el par, retornamos NULL
+    return NULL;
 }
 
 Pair *firstMap(HashMap *map)
