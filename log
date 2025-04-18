@@ -100,3 +100,9 @@ vi., 18 de abr. de 2025 15:38:03:
  1 file changed, 3 insertions(+), 3 deletions(-)
  tests:  0|0
 ba26efa
+vi., 18 de abr. de 2025 15:40:03: 
+ hashmap.c | 23 ++++++++++++++++-------
+ 1 file changed, 16 insertions(+), 7 deletions(-)
+ tests:  13|2
+total_score: 50/70
+6de2caf
