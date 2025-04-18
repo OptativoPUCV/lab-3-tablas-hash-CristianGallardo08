@@ -35,3 +35,17 @@ hashmap.c:67:10: note: declared here
           ^~~~~~~~~
 cc1.exe: all warnings being treated as errors
 50cca53
+vi., 18 de abr. de 2025 15:11:55: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:71:9: error: 'return' with no value, in function returning non-void [-Werror]
+         return;
+         ^~~~~~
+hashmap.c:67:10: note: declared here
+ HashMap *createMap(long capacity)
+          ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+76dea7f

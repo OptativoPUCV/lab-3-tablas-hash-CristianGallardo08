@@ -73,8 +73,8 @@ HashMap *createMap(long capacity)
     map->buckets = (Pair **)calloc(capacity, sizeof(Pair *));
     if (map->buckets == NULL)
     {
-        return;
         free(map);
+        return NULL;
     }
     map->capacity = capacity;
     map->size = 0;
